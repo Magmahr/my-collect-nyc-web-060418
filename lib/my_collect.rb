@@ -2,7 +2,7 @@ def my_collect(array)
   count = 0
   new_array = []
   while count < array.length
-    if array.include?("Tim")
+    if array.include?("Tim Jones")
       yield array[count]
       first_name = array[count].split(" ").first
      new_array << first_name
