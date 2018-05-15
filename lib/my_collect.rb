@@ -2,10 +2,10 @@ def my_collect(array)
   count = 0
   new_array = []
   while count < array.length
-    if array == "students"
+    if array.include?("Tim")
       yield array[count]
      new_array << array[count].split(" ").first
-    elsif array == "languages"
+    elsif array.include?("ruby")
       yield array[count]
      new_array << array[count].upcase
     else
