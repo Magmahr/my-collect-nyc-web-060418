@@ -4,7 +4,8 @@ def my_collect(array)
   while count < array.length
     if array.include?("Tim")
       yield array[count]
-     new_array << array[count].split(" ").first
+      first_name = array[count].split(" ").first
+     new_array << first_name
     elsif array.include?("ruby")
       yield array[count]
      new_array << array[count].upcase
